@@ -25,14 +25,17 @@ nav a:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-
 .rule{display:flex;align-items:center;justify-content:center;gap:.6rem;margin:1rem auto;width:clamp(8.8rem,37vw,19.8rem);color:var(--fg)}
 .rule i{flex:1;height:6px;border-radius:6px;background:currentColor}
 .rule svg{width:38px;height:38px;flex:none}
-.lede{max-width:34rem;margin:2.5rem auto 2rem;color:var(--mute);font-size:1.4rem}
+.lede{max-width:34rem;margin:2.5rem auto 1rem;color:var(--mute);font-size:1.4rem}
+.sub{max-width:34rem;margin:0 auto 2rem;font-size:1.25rem}
 .btn{display:inline-block;background:var(--fg);color:var(--bg);padding:.8rem 2rem;border-radius:999px;text-decoration:none;text-transform:uppercase;letter-spacing:.1em;border:0;font:inherit;cursor:pointer}
 .btn:hover{opacity:.85}
-.steps{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:2.5rem}
+.steps{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:2.5rem}
 .card{background:var(--soft);border-radius:28px;padding:2rem}
 .card .n{font-size:3.5rem;line-height:1}
 .card h3{font-size:2rem;margin:.5rem 0}
-.card p{margin:0;color:var(--mute)}
+.card p{margin:0 0 .8rem;color:var(--mute)}
+.card p:last-child{margin-bottom:0}
+.card .say{color:var(--fg);font-size:1.3rem}
 .breathe{text-align:center;background:var(--soft);border-radius:40px;margin:0 auto;width:calc(100% - 2rem)}
 .breathe-wrap{max-width:960px;margin:0 auto}
 .orb-box{display:grid;place-items:center;height:300px}
@@ -42,15 +45,17 @@ nav a:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-
 .orb span{font-size:1rem}
 .quote{text-align:center}
 .quote p{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.3;max-width:36rem;margin:1.5rem auto}
+.quote p.small{font-size:1.3rem;color:var(--mute);line-height:1.5}
 footer{text-align:center;padding:3rem 1.5rem 4rem;color:var(--mute)}
 footer .rule{max-width:220px}
+footer .note{max-width:32rem;margin:1.5rem auto 0;font-size:1rem}
 @media (prefers-reduced-motion:reduce){.orb{transition:none}}
 </style>
 </head>
 <body>
 <nav>
   <strong>SFB</strong>
-  <div><a href="#about">About</a><a href="#practice">Practice</a><a href="#breathe">Breathe</a></div>
+  <div><a href="#about">About</a><a href="#practice">Practice</a><a href="#heal">Healing</a><a href="#breathe">Breathe</a></div>
 </nav>
 
 <section class="hero">
@@ -64,28 +69,43 @@ footer .rule{max-width:220px}
   <i></i></div>
   <h1>Breathe</h1>
   <p class="lede">In a world that moves faster every day, we invite you to slow down, tune into your feelings, and just breathe.</p>
-  <a class="btn" href="#breathe">Take a breath</a>
+  <p class="sub">Nothing to fix. Nowhere to get to. You’re already here.</p>
+  <a class="btn" href="#breathe">Begin with one breath</a>
 </section>
 
 <section id="about" class="quote">
   <h2>Why we’re here</h2>
-  <p>We have been running all our lives, losing touch with our bodies and feelings. We invite you to slow down, stop for a moment, tune into your feelings, and rest in our breath.</p>
+  <p>Most of us have been running for a long time. Away from what hurts, toward the next thing, always a little ahead of our own bodies.</p>
+  <p class="small">Sooner or later the body asks us to stop. This is a place to do exactly that: to sit, to feel what’s here, and to rest in the breath that has been with you all along.</p>
 </section>
 
 <section id="practice">
-  <h2>Three simple steps</h2>
+  <h2>Three gentle invitations</h2>
   <div class="steps">
-    <div class="card"><div class="n">1</div><h3>Stop</h3><p>Put down what you’re holding. Let the to-do list wait. Give yourself permission to pause, even for a minute.</p></div>
-    <div class="card"><div class="n">2</div><h3>Feel</h3><p>Notice what’s here: tension, restlessness, joy, tiredness. No fixing, no judging. Just noticing.</p></div>
-    <div class="card"><div class="n">3</div><h3>Breathe</h3><p>Let the breath slow down and carry you back to the present. In through the nose, out nice and long.</p></div>
+    <div class="card"><div class="n">1</div><h3>Stop</h3>
+      <p>You don’t have to do anything. Let the list wait. Sit down and let the chair or the floor hold you.</p>
+      <p>Stopping isn’t only quieting the mind. The body has the habit of running too, so let it come to rest as well.</p>
+      <p class="say">“I have arrived. I am home.”</p></div>
+    <div class="card"><div class="n">2</div><h3>Feel</h3>
+      <p>Come out of the head and into the body. Is there tightness, heaviness, buzzing, warmth, numbness? Let it be here. Don’t push it away, and don’t hold on to it.</p>
+      <p>If something painful or tender shows up, hold it the way a mother holds a crying baby. You don’t need to understand it. Just stay close, and be gentle.</p></div>
+    <div class="card"><div class="n">3</div><h3>Breathe</h3>
+      <p>Let the breath be natural. There’s nothing to get right. It has been with you since your very first moment.</p>
+      <p>Feel it come in. Feel it go out. When the mind wanders, come back. The breath is your anchor, and you may even find you enjoy it.</p></div>
   </div>
+</section>
+
+<section id="heal" class="quote">
+  <h2>Room to heal</h2>
+  <p>Your body knows how to heal. An animal that is hurt withdraws into the forest, lies still, and lets its body do the work. It doesn’t strive or fix. It rests.</p>
+  <p class="small">When you stop, feel and breathe, you do the same: you take care of your body by giving it what it needs. Stopping lets it finally rest. Feeling lets what you’ve been carrying be met with kindness. Breathing brings you home to this moment, again and again. Together they give you and your body room to heal. That’s why we practice.</p>
 </section>
 
 <section id="breathe" class="breathe">
   <div class="breathe-wrap">
-    <h2>Breathe with us</h2>
-    <p style="color:var(--mute)">Follow the circle. Breathe in as it grows, out as it shrinks.</p>
-    <div class="orb-box"><div class="orb" id="orb"><span id="label">Ready</span></div></div>
+    <h2>Rest in the breath</h2>
+    <p style="color:var(--mute)">Follow the circle if it helps: in as it grows, out as it softens. Or close your eyes and let your own natural breath do what it already knows how to do.</p>
+    <div class="orb-box"><div class="orb" id="orb"><span id="label">Here</span></div></div>
     <button class="btn" id="toggle">Begin</button>
   </div>
 </section>
@@ -103,8 +123,8 @@ footer .rule{max-width:220px}
   function exhale(){orb.className='orb out';label.textContent='Out'}
   function cycle(){inhale();timer=setTimeout(function(){exhale();timer=setTimeout(cycle,6000)},4000)}
   btn.addEventListener('click',function(){
-    if(running){clearTimeout(timer);running=false;orb.className='orb';label.textContent='Ready';btn.textContent='Begin'}
-    else{running=true;btn.textContent='Pause';cycle()}
+    if(running){clearTimeout(timer);running=false;orb.className='orb';label.textContent='Here';btn.textContent='Begin'}
+    else{running=true;btn.textContent='Stop';cycle()}
   });
 })();
 </script>
